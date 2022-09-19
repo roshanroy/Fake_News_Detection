@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>noCAP</title>
+    <link rel="stylesheet" href="{{url_for('static', filename="/styles/style.css")}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+         <nav>
+             <ul>
+                 <li><a href="{{url_for('home')}}">Home</a></li>
+                 <li><a href="{{url_for('hello')}}">About</a></li>
+             </ul>
+         </nav>
+    </header>
+    <div class="para">
+        <p>Our project aims to implement a simple web-based interface for end
+             users to interact with and decide whether the questionable titles
+              and news articles they see day-to-day are indeed true or just <strong>
+                Fake News
+              </strong>.<br><br><br>Welcome to <strong>noCAP!: Fake News Detector</strong> </p>
+    </div>
+    <div class="wrap">
+   <a href="{{url_for('loading')}}"> <button class="button"></button></a>
+    </div>
+</body>
+</html>

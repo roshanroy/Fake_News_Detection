@@ -1,0 +1,89 @@
+body{
+  padding: 0;
+  margin: 0;
+  background-image: url('/static/img/load.jpg');
+  text-align: center;
+  height:100%;
+  font-family: 'lato';
+  font-weight: 100;;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.load{
+  position: relative;
+  top: 55%;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+.wrapper{
+  position:absolute;
+  top:40%;
+  left:50%;
+  transform:translate(-50%, -50%); 
+}
+.circle{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: grey;
+  border-radius: 50%;
+  animation: loading 1.5s cubic-bezier(.8, .5, .2, 1.4) infinite;
+  transform-origin: bottom center;
+  position: relative;
+}
+@keyframes loading{
+  0%{
+    transform: translateY(0px);
+    background-color:grey;
+  }
+  50%{
+    transform: translateY(50px);
+    background-color: black;
+  }
+  100%{
+    transform: translateY(0px);
+    background-color: grey;
+  }
+}
+.circle-1{
+  animation-delay: 0.1s;
+}
+.circle-2{
+  animation-delay: 0.2s;
+}
+.circle-3{
+  animation-delay: 0.3s;
+}
+.circle-4{
+  animation-delay: 0.4s;
+}
+.circle-5{
+  animation-delay: 0.5s;
+}
+.circle-6{
+  animation-delay: 0.6s;
+}
+.circle-7{
+  animation-delay: 0.7s;
+}
+.circle-8{
+  animation-delay: 0.8s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

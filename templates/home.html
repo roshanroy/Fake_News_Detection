@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>noCAP</title>
+    <link rel="stylesheet" href="{{url_for('static',filename="styles/homestyle.css")}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+    <header>
+         <nav>
+             <ul>
+                 <li><a href="{{url_for('home')}}">Home</a></li>
+                 <li><a href="{{url_for('hello')}}">About</a></li>
+             </ul>
+         </nav>
+    </header>
+    <div>
+   
+        <form class="form__group" autocomplete="off" action="#" method="POST">
+            <input type="text" class="form__input" id="name" name="title" placeholder="News" required="" />
+            <label for="name" class="form__label"></label>
+            <br>
+            <input type="text" class="form__input" id="name" placeholder="Source" required="" name = 'source' />
+            <label for="name" class="form__label"></label>
+        
+        
+    </div>
+    <div class="wrap">
+    
+    <button class="button" type="submit"></button>
+        </form>
+    </div>
+</body>
+</html>
